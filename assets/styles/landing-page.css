@@ -164,3 +164,11 @@ main {
   font-size: 0.9rem;
   font-style: italic;
 }
+main h2 {
+  padding-top: 5rem;
+  font-weight: 600;
+}
+main h2 span {
+  text-decoration: underline;
+  color: var(--clr-accent-800);
+}
