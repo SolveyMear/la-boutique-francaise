@@ -1,2 +1,3 @@
 # la-boutique-francaise
-Tentative de site marchand
+
+Site réalisé par Solvey & Sacha

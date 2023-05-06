@@ -1,0 +1,65 @@
+/* SECTION ALL USERS */
+
+#allUsers div {
+  background: rgba(255, 166, 0, 0.606);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-block: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#allUsers div img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#allUsers div input {
+  width: 103px;
+  height: 44px;
+}
+
+#allUsers div input.Supprimer {
+  background: red;
+  color: var(--clr-neutral-100);
+  border: none;
+  cursor: pointer;
+}
+#allUsers div input.Modifier {
+  background: rgb(255, 234, 0);
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTION PANNEAU ADMIN */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(255, 166, 0, 0.606);
+  padding: 1rem;
+  border-radius: 10px;
+}
+form h2 {
+  font-weight: 600;
+}
+
+input,
+form button {
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 1rem;
+  color: inherit;
+  border-radius: 5px;
+}
+
+form button {
+  cursor: pointer;
+}

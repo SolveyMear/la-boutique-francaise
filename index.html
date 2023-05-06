@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icones/flaticon.png" />
+    <link rel="stylesheet" href="./assets/styles/default-style.css" />
     <link rel="stylesheet" href="./assets/styles/landing-page.css" />
+    <script src="./assets/scripts/app.js" defer></script>
     <title>Made In Cheese</title>
   </head>
   <body>
@@ -15,10 +18,10 @@
         </div>
         <div class="nav__links">
           <ul>
-            <li><a href="#" class="underline">Boutique</a></li>
-            <li><a href="#" class="underline">Notre équipe</a></li>
+            <li><a href="index.html" class="underline">Boutique</a></li>
+            <li><a href="equipe.html" class="underline">Notre équipe</a></li>
             <li>
-              <a href="#" class="inline-flex underline"
+              <a href="shopping-cart.html" class="inline-flex underline"
                 >Panier
                 <img
                   src="./assets/icones/icone-panier-plein.svg"
@@ -60,8 +63,8 @@
           </div>
         </div>
         <h2>
-          Et si vous vous laissiez tenter ? Plus que du simple fromage, c'est
-          une véritable <span>expérience</span> !
+          Et si vous vous laissiez tenter ? Plus que du simple fromage,<br />
+          c'est une véritable <span>expérience</span> !
         </h2>
       </div>
     </main>
@@ -69,9 +72,189 @@
     <section class="avantages">
       <div class="container">
         <div class="split">
-          <div class="avantages__card"></div>
-          <div class="avantages__card"></div>
-          <div class="avantages__card"></div>
+          <div class="avantages__card">
+            <div class="flex-row">
+              <img src="./assets/icones/etoile-fill.svg" alt="portrait" />
+              <p class="avantages__titre">Source de nutriments</p>
+            </div>
+            <p>
+              Le fromage est une excellente source de protéines, de calcium et
+              de vitamines. Ces nutriments sont importants pour la santé des os,
+              des muscles et du système immunitaire.
+            </p>
+          </div>
+          <div class="avantages__card">
+            <div class="flex-row">
+              <img src="./assets/icones/heart-fill.svg" alt="portrait" />
+              <p class="avantages__titre">Variété de goûts et de textures</p>
+            </div>
+            <p>
+              Le fromage est disponible dans une grande variété de goûts et de
+              textures, ce qui le rend attrayant pour de nombreuses personnes.
+            </p>
+          </div>
+          <div class="avantages__card">
+            <div class="flex-row">
+              <img src="./assets/icones/refresh-fill.svg" alt="portrait" />
+              <p class="avantages__titre">Utilisation dans la cuisine</p>
+            </div>
+            <p>
+              Le fromage est également un ingrédient polyvalent en cuisine. Il
+              peut être utilisé dans une variété de plats, tels que les pâtes,
+              les pizzas, les sandwichs et les salades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h2>Nos produits</h2>
+        <div class="products__card">
+          <div class="products__card-img-container">
+            <img
+              src="./assets/images/fromage-2.jpeg"
+              alt="fromage"
+              class="products__card-img"
+            />
+            <div class="liker-produit">
+              <img src="./assets/icones/liker-produit.svg" alt="icone coeur" />
+            </div>
+          </div>
+          <p class="products__name">Ricotta fraîche</p>
+          <p class="products__price">18.00€</p>
+          <p class="products__descr">
+            Le fromage est une excellente source de protéines, de calcium et de
+            vitamines.
+          </p>
+        </div>
+        <h2>Meilleurs Deals</h2>
+        <div class="split">
+          <div class="products__card">
+            <div class="products__card-img-container">
+              <img
+                src="./assets/images/fromage-3.jpeg"
+                alt="fromage"
+                class="products__card-img"
+              />
+              <div class="liker-produit">
+                <img
+                  src="./assets/icones/liker-produit.svg"
+                  alt="icone coeur"
+                />
+              </div>
+            </div>
+            <p class="products__name">Bleu raffiné</p>
+            <p class="products__price">25.00€</p>
+            <p class="products__descr">
+              Le fromage est une excellente source de protéines, de calcium et
+              de vitamines.
+            </p>
+            <div class="inline-flex">
+              <p>Indiquez le montant souhaité:</p>
+              <input
+                oninput="cart()"
+                type="number"
+                id="bleu"
+                min="0"
+                value="0"
+              />
+            </div>
+          </div>
+          <div class="products__card">
+            <div class="products__card-img-container">
+              <img
+                src="./assets/images/fromage-4.jpeg"
+                alt="fromage"
+                class="products__card-img"
+              />
+              <div class="liker-produit">
+                <img
+                  src="./assets/icones/liker-produit.svg"
+                  alt="icone coeur"
+                />
+              </div>
+            </div>
+            <p class="products__name">Fromages à raclette</p>
+            <p class="products__price">30.00€</p>
+            <p class="products__descr">
+              Le meilleur des fromages pour vos raclettes!
+            </p>
+            <div class="inline-flex">
+              <p>Indiquez le montant souhaité:</p>
+              <input
+                oninput="cart()"
+                type="number"
+                id="raclette"
+                min="0"
+                value="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="split">
+          <div class="products__card">
+            <div class="products__card-img-container">
+              <img
+                src="./assets/images/fromage-5.jpeg"
+                alt="fromage"
+                class="products__card-img"
+              />
+              <div class="liker-produit">
+                <img
+                  src="./assets/icones/liker-produit.svg"
+                  alt="icone coeur"
+                />
+              </div>
+            </div>
+            <p class="products__name">Coulommiers</p>
+            <p class="products__price">61.00€</p>
+            <p class="products__descr">Le meilleur fromage au monde ? Oui.</p>
+            <div class="inline-flex">
+              <p>Indiquez le montant souhaité:</p>
+              <input
+                oninput="cart()"
+                type="number"
+                id="coulommiers"
+                min="0"
+                value="0"
+              />
+            </div>
+          </div>
+          <div class="products__card">
+            <div class="products__card-img-container">
+              <img
+                src="./assets/images/fromage-7.jpeg"
+                alt="fromage"
+                class="products__card-img"
+              />
+              <div class="liker-produit">
+                <img
+                  src="./assets/icones/liker-produit.svg"
+                  alt="icone coeur"
+                />
+              </div>
+            </div>
+            <p class="products__name">Saint-Nectaire</p>
+            <p class="products__price">17.00€</p>
+            <p class="products__descr">Miaaaam le Saint-Nectaire.</p>
+            <div class="inline-flex">
+              <p>Indiquez le montant souhaité:</p>
+              <input
+                oninput="cart()"
+                type="number"
+                id="nectaire"
+                min="0"
+                value="0"
+              />
+            </div>
+          </div>
+        </div>
+        <button id="viderPanier">Vider le panier</button>
+        <div class="resultat-panier">
+          <p id="itemTotal">Votre panier est vide.</p>
+          <p id="totalDue">Le total est de 0€.</p>
         </div>
       </div>
     </section>

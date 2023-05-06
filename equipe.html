@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icones/flaticon.png" />
+    <script src="./assets/scripts/app.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/default-style.css" />
+    <link rel="stylesheet" href="./assets/styles/equipe.css" />
+    <title>Equipe - Made In Cheese</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <p>Made In <span>Cheese</span>.</p>
+        </div>
+        <div class="nav__links">
+          <ul>
+            <li><a href="index.html" class="underline">Boutique</a></li>
+            <li><a href="equipe.html" class="underline">Notre équipe</a></li>
+            <li>
+              <a href="shopping-cart.html" class="inline-flex underline"
+                >Panier
+                <img
+                  src="./assets/icones/icone-panier-plein.svg"
+                  alt="icone de panier"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="panneau-admin">
+      <div class="container">
+        <form>
+          <h2>
+            Vous êtes en mode administrateur, et pouvez modifier ou ajouter des
+            membres à l'équipe
+          </h2>
+          <input type="text" placeholder="Nom entier" id="nomEntier" />
+          <input type="text" placeholder="Poste" id="poste" />
+          <input type="text" placeholder="Description" id="descr" />
+          <button id="valider">Ajouter</button>
+        </form>
+      </div>
+    </section>
+    <section id="allUsers" class="container split"></section>
+  </body>
+</html>

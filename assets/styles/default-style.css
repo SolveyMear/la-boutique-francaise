@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* RESET CSS */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+:root {
+  --ff-main: "Poppins", sans-serif;
+
+  --clr-neutral-900: black;
+  --clr-neutral-100: white;
+  --clr-accent-800: rgb(247, 172, 43);
+}
+
+/*  UTILITY CLASSES */
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+    gap: 2em;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--clr-accent-800);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.cta {
+  background-color: var(--clr-accent-800);
+  padding: 1rem;
+  border-radius: 500px;
+  border: 2px solid var(--clr-accent-800);
+  transition: all 400ms ease;
+}
+.cta:hover {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-800);
+  padding: 1rem;
+  border-radius: 500px;
+}
+
+.portrait {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+body,
+input {
+  font-family: var(--ff-main);
+  color: var(--clr-neutral-900);
+}
+
+section {
+  padding-block: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#viderPanier {
+  padding: 15px 10px;
+  margin-top: 1rem;
+  background: red;
+  color: var(--clr-neutral-100);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font: inherit;
+}
+
+/* HEADER MENU */
+
+header {
+  padding-block: 2rem;
+}
+
+header .logo {
+  font-size: 1.5rem;
+}
+
+header .logo span {
+  color: var(--clr-accent-800);
+  font-weight: 500;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .nav__links ul {
+  font-size: 1.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
